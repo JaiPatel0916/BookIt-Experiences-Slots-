@@ -10,7 +10,7 @@ export default function Navbar({ onSearch }: NavbarProps) {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setSearch(value);
-    onSearch(value); // 👈 send search text to parent (Home.tsx)
+    onSearch(value); 
   };
 
   return (
