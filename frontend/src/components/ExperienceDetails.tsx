@@ -3,13 +3,12 @@ import { useParams } from "react-router-dom";
 import type { Experience } from "../types/Experience";
 
 export default function ExperienceDetails() {
-  const { id } = useParams(); // ✅ get :id from URL
+  const { id } = useParams(); 
   const [experience, setExperience] = useState<Experience | null>(null);
   const [quantity, setQuantity] = useState(1);
   const [selectedDate, setSelectedDate] = useState("");
   const [selectedTime, setSelectedTime] = useState("");
 
-  // ✅ Fetch experience details
   useEffect(() => {
     const fetchExperience = async () => {
       try {
@@ -36,7 +35,6 @@ export default function ExperienceDetails() {
 
   return (
     <div className="px-6 md:px-12 py-6 grid grid-cols-1 lg:grid-cols-3 gap-8">
-      {/* LEFT: Image + Info */}
       <div className="lg:col-span-2">
         <img
           src={experience.image}
@@ -49,7 +47,6 @@ export default function ExperienceDetails() {
           <p className="text-gray-600 mt-2">{experience.description}</p>
         </div>
 
-        {/* Choose Date */}
         <div className="mt-6">
           <h2 className="font-semibold mb-2">Choose date</h2>
           <div className="flex flex-wrap gap-2">
@@ -72,7 +69,6 @@ export default function ExperienceDetails() {
           </div>
         </div>
 
-        {/* Choose Time */}
         <div className="mt-6">
           <h2 className="font-semibold mb-2">Choose time</h2>
           <div className="flex flex-wrap gap-2">
@@ -98,7 +94,6 @@ export default function ExperienceDetails() {
           </p>
         </div>
 
-        {/* About Section */}
         <div className="mt-6">
           <h2 className="font-semibold mb-2">About</h2>
           <div className="bg-gray-100 text-gray-700 p-3 rounded-md text-sm">
@@ -107,12 +102,10 @@ export default function ExperienceDetails() {
         </div>
       </div>
 
-      {/* RIGHT: Booking Card */}
       <div className="border rounded-xl p-6 h-fit shadow-sm">
         <p className="text-gray-500 text-sm">Starts at</p>
         <p className="text-xl font-semibold mb-4">₹{experience.price}</p>
 
-        {/* Quantity Controls */}
         <div className="flex justify-between items-center mb-4">
           <span className="text-gray-700">Quantity</span>
           <div className="flex items-center gap-3">

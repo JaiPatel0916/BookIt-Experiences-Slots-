@@ -1,7 +1,6 @@
 import Booking from "../models/Booking.js";
 import Experience from "../models/Experience.js";
 
-//POST/ bookings - Accept booking details
 export const createBooking = async (req, res) => {
     try {
         const { experienceId, name, email, date, time, totalPrice } = req.body;

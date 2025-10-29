@@ -1,6 +1,5 @@
 import Experience from "../models/Experience.js";
 
-//GET /experiences - Return list of experiences.
 export const getExperiences = async (req, res) => {
     try {
         const experiences = await Experience.find();
@@ -10,7 +9,7 @@ export const getExperiences = async (req, res) => {
     }
 };
 
-//GET /experiences/:id - Return details and slot availability.
+
 export const getExperienceById = async (req, res) => {
     try {
         const experience = await Experience.findById(req.params.id);

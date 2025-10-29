@@ -1,10 +1,9 @@
 
 const promoCodes = {
-    SAVE10: { type: "percent", value: 10 }, // 10% off
-    FLAT100: { type: "flat", value: 100 },  // ₹100 off
+    SAVE10: { type: "percent", value: 10 }, 
+    FLAT100: { type: "flat", value: 100 }, 
 };
 
-// POST /promo/validate - Validate promo codes
 export const validatePromo = async (req, res) => {
     try {
         const { code, totalPrice } = req.body;
