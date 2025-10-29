@@ -27,7 +27,8 @@ const Experiences: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Navbar/>
+<Navbar onSearch={(value) => setSearch(value)} />
+
       
       <main className="px-6 py-10 max-w-7xl mx-auto">
         <h2 className="text-2xl font-semibold text-gray-800 mb-8">

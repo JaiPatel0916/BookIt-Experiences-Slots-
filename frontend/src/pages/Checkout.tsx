@@ -32,8 +32,9 @@ export default function Checkout() {
   const [agreed, setAgreed] = useState(false);
   const [processing, setProcessing] = useState(false);
   const [error, setError] = useState("");
-  const subtotal = state?.subtotal ?? 0;
-  const tax = subtotal * 0.05; // 5%
+    const subtotal = state?.subtotal ?? 0;
+      const [search, setSearch] = useState("");
+  const tax = subtotal * 0.05; 
   const totalBeforeDiscount = subtotal + tax;
   const totalAfterDiscount = Math.max(0, totalBeforeDiscount - discountAmount);
 
@@ -133,7 +134,7 @@ export default function Checkout() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Navbar />
+<Navbar onSearch={(value) => setSearch(value)} />
       <div className="max-w-6xl mx-auto px-6 py-8">
         <button
           onClick={() => window.history.back()}

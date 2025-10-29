@@ -28,6 +28,7 @@ const ExperienceDetails: React.FC = () => {
   const [selectedTime, setSelectedTime] = useState<string>("");
   const [quantity, setQuantity] = useState<number>(1);
   const [loading, setLoading] = useState(true);
+    const [search, setSearch] = useState("");
   const [message, setMessage] = useState<string>("");
   const dates = ["Oct 22", "Oct 23", "Oct 24", "Oct 25", "Oct 26"];
   const timeSlots: TimeSlot[] = [
@@ -127,7 +128,7 @@ const ExperienceDetails: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Navbar />
+<Navbar onSearch={(value) => setSearch(value)} />
 
       <div className="max-w-6xl mx-auto px-6 py-8">
       
