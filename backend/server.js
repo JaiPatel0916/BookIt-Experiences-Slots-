@@ -37,7 +37,7 @@ app.use((req, res, next) => {
         return res.status(404).json({ message: "API route not found" });
     }
 
-    // For all other routes, serve index.html (React SPA)
+   
     res.sendFile(path.join(frontendPath, "index.html"));
 });
 
