@@ -43,8 +43,8 @@ const ExperienceDetails: React.FC = () => {
       try {
         if (!id) return;
         const [expRes, bookingRes] = await Promise.all([
-          fetch(`http://localhost:5000/api/experiences/${id}`),
-          fetch(`http://localhost:5000/api/bookings`),
+          fetch(`https://bookit-fullstack.onrender.com/api/experiences/${id}`),
+          fetch(`https://bookit-fullstack.onrender.com/api/bookings`),
         ]);
 
         const expData = await expRes.json();

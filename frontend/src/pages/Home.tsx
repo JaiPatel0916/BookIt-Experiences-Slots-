@@ -11,7 +11,7 @@ const Experiences: React.FC = () => {
   useEffect(() => {
     const fetchExperiences = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/experiences");
+        const res = await fetch("https://bookit-fullstack.onrender.com/api/experiences");
         const data = await res.json();
         setExperiences(data);
       } catch (error) {
