@@ -3,7 +3,7 @@
 <p align="center">Transforming Experiences into Unforgettable Moments</p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/last-commit/your-username/BOOKIT-EXPERIENCES-SLOTS?style=for-the-badge" alt="last commit"/>
+  <img src="https://img.shields.io/github/last-commit/JaiPatel0916/BOOKIT-EXPERIENCES-SLOTS?style=for-the-badge" alt="last commit"/>
   <img src="https://img.shields.io/badge/typescript-75.8%25-blue?style=for-the-badge" alt="typescript"/>
   <img src="https://img.shields.io/badge/languages-4-green?style=for-the-badge" alt="languages"/>
 </p>
@@ -15,7 +15,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Express-black?style=for-the-badge&logo=express" />
   <img src="https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white" />
-  <img src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown" />
+  
   <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" />
   <img src="https://img.shields.io/badge/Autoprefixer-DD3735?style=for-the-badge&logo=autoprefixer&logoColor=white" />
   <img src="https://img.shields.io/badge/Mongoose-880000?style=for-the-badge&logo=mongoose&logoColor=white" />
