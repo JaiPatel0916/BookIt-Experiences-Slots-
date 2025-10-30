@@ -61,9 +61,10 @@ Build **BookIt-Experiences-Slots** from the source and install dependencies:
 ### 1. Clone the repository:
 ```bash
 git clone https://github.com/JaiPatel0916/BookIt-Experiences-Slots-
-
+```
 ### 3. Install the dependencies:
 
 Using **npm**:
 ```bash
 npm install
+```
