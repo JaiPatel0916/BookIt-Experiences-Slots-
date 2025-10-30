@@ -52,3 +52,12 @@ The core features include:
 - 🔒 **Robust Backend:** Express, Mongoose, and MongoDB ensure reliable data handling and API management.  
 
 ---
+---
+
+## ⚙️ Installation
+
+Build **BookIt-Experiences-Slots** from the source and install dependencies:
+
+### 1. Clone the repository:
+```bash
+git clone https://github.com/JaiPatel0916/BookIt-Experiences-Slots-
