@@ -1,4 +1,4 @@
-<h1 align="center">BOOKIT-EXPERIENCES-SLOTS-</h1>
+<h1 align="center">BOOKIT-EXPERIENCES-SLOTS</h1>
 
 <p align="center">Transforming Experiences into Unforgettable Moments</p>
 
