@@ -30,7 +30,7 @@ const ExperienceDetails: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
   const [message, setMessage] = useState<string>("");
-  const dates = ["Oct 31","Nov 1", "Nov 2", "Nov 3","Nov 4"];
+  const dates = ["Nov 5","Nov 6", "Nov 7", "Nov 8","Nov 9"];
   const timeSlots: TimeSlot[] = [
     { time: "07:00 am", capacity: 4 },
     { time: "09:00 am", capacity: 2 },
